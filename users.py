@@ -22,7 +22,6 @@ def get_flt_attr(attr):
         return -1.0
 
 def read_users(csv_filename):
-    global user_dict
     csv_file = open(csv_filename, 'rb')
     reader = csv.reader(csv_file)
     reader.next()  # ignore header
