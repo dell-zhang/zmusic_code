@@ -1,0 +1,13 @@
+0	Prefer not to state
+1	Other
+2	Part-time student
+3	Full-time student
+4	Full-time housewife / househusband
+5	Temporarily unemployed
+6	In unpaid employment (e.g. voluntary work)
+7	Employed part-time less than 8 hours per week
+8	Employed 8-29 hours per week
+9	Employed 30+ hours a week
+10	Self-employed
+11	Retired from full-time employment (30+ hours per week)
+12	Retired from self-employment

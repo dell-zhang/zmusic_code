@@ -1,0 +1,5 @@
+0	Own none of their music
+1	Don't know
+2	Own a little of their music
+3	Own a lot of their music
+4	Own all or most of their music

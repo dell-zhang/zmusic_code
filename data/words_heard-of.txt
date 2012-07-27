@@ -1,0 +1,4 @@
+0	Never heard of
+1	Heard of
+2	Heard of and listened to music EVER
+3	Heard of and listened to music RECENTLY
