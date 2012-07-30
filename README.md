@@ -4,7 +4,7 @@ zmusic_code
 Code for the EMI Music Data Science Hackathon
 
 --------------------------------
-System Requirements
+Requirements
 * Python 2.7.3 x64
   http://www.python.org/getit/releases/2.7/
 * Numpy-MKL
@@ -25,19 +25,32 @@ Data
 # show how the text-format categorical attributes are encoded.
 
 --------------------------------
+Programs
 
 # preprocess the users data
 ./users.py
+
 # preprocess the words data
 ./words.py
+
 # proprocess the music training/test data
 ./music.py
+
 # conduct cross-validation experiments on the training data 
 # using the random forest with <n> trees
 ./model.py <n>
+
 # make final predictions on the test data
 # using the random forest with 60  trees
 ./submit.py
+
+--------------------------------
+
+Performance
+
+RMSE=
+13.76513 (public), 
+13.80559 (private). 
 
 --------------------------------
 
