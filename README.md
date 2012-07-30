@@ -3,8 +3,8 @@ zmusic_code
 
 Code for the EMI Music Data Science Hackathon
 
-http://musicdatascience.com/music-data-science-hackathon/
-http://www.kaggle.com/c/MusicHackathon
+* http://musicdatascience.com/music-data-science-hackathon/
+* http://www.kaggle.com/c/MusicHackathon
 
 --------------------------------
 REQUIREMENTS
@@ -19,37 +19,42 @@ REQUIREMENTS
 --------------------------------
 DATA
 
+* ./data/*.csv
+
 The data files users.csv and words.csv
 have been cleaned and encoded manually
 using unix tools (cat, cut, split, grep, sort, wc,...)
 and a text editor (search, replace,...).
 
-* ./data/*.csv
+* ./data/*.txt
 
 The other files users_*.txt and words_*.txt 
 show how the text-format categorical attributes are encoded.
 
-* ./data/*.txt
-
 --------------------------------
 PROGRAMS
 
+* ./users.py
+
 Preprocess the users data
-./users.py
+
+* ./words.py
 
 Preprocess the words data
-./words.py
+
+* ./music.py
 
 Proprocess the music training/test data
-./music.py
+
+* ./model.py n
 
 Run cross-validation experiments on the training data 
 using the random forest with n trees
-./model.py n
+
+* ./submit.py
 
 Make final predictions on the test data
 using the random forest with 60  trees
-./submit.py
 
 --------------------------------
 
