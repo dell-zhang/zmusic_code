@@ -2,6 +2,8 @@ zmusic_code
 ================================
 
 Code for the EMI Music Data Science Hackathon
+http://musicdatascience.com/music-data-science-hackathon/
+http://www.kaggle.com/c/MusicHackathon
 
 --------------------------------
 Requirements
