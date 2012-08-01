@@ -61,6 +61,7 @@ using the random forest with 60  trees
 PERFORMANCE
 
 RMSE=
+* 14.32221 (3-fold cv)
 * 13.76513 (public)
 * 13.80559 (private)
 
