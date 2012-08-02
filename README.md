@@ -46,10 +46,10 @@ Preprocess the words data
 
 Proprocess the music training/test data
 
-* ./model.py n
+* ./model.py [n]
 
 Run cross-validation experiments on the training data 
-using the random forest with n trees
+using the random forest with n trees (n=60 by default)
 
 * ./submit.py
 
