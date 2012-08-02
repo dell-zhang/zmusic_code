@@ -48,7 +48,7 @@ def represent(example):
     vector.extend([binary(word['w%d' % (j+1)]) for j in range(81)])
     vector.extend(indicator(track_id, 184))
     vector.append(user_id)
-    # The principled way is to use indicator(user_id, 50928), 
+    # The principled way is to use vector.extend(indicator(user_id, 50928)), 
     # but it would take too much memory.
     return vector
 
