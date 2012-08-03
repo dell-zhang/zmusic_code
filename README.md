@@ -15,7 +15,8 @@ REQUIREMENTS
   http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy
 * scikit-learn
   http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-learn
-
+* libFM
+  http://www.libfm.org/
 --------------------------------
 DATA
 
@@ -56,14 +57,25 @@ using the random forest with n trees (n=60 by default)
 Make final predictions on the test data
 using the random forest with 60  trees
 
+&./prepare_libfm.py
+
+Convert the data into libFM format: train.libfm and test.libfm
+
 --------------------------------
 
 PERFORMANCE
 
-RMSE=
-* 14.32221 (3-fold cv)
-* 13.76513 (public)
-* 13.80559 (private)
+Random Forest
+(n_estimators=60, max_features='sqrt')
+
+* RMSE = 14.59553 (2-fold cross-validation)
+* RMSE = 13.76513 (public)
+* RMSE = 13.80559 (private)
+
+Factorization Machine
+(-method mcmc -dim '1,1,100' -init_stdev 0.25 -iter 1000)
+
+* RMSE = 14.19240 (2-fold cross-validation)
 
 --------------------------------
 

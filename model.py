@@ -35,19 +35,19 @@ def represent(example):
     vector.extend(indicator(time_id, 24))
     user = users.user_dict.get(user_id, defaultdict(lambda: -1))
     vector.append(binary(user['gender']))
-    vector.append(user['age'])
+    vector.append(user['age']/100.0)
     vector.extend(indicator(user['working'], 13))
     vector.extend(indicator(user['region'], 4))
     vector.extend(indicator(user['music'], 5))
-    vector.extend([user['list_own'], user['list_back']])
-    vector.extend([user['q%d' % (j+1)] for j in range(19)])
+    vector.extend([user['list_own']/24.0, user['list_back']/24.0])
+    vector.extend([user['q%d' % (j+1)]/100.0 for j in range(19)])
     word = words.word_dict.get((artist_id, user_id), defaultdict(lambda: -1))
     vector.extend(indicator(word['heard-of'], 4))
     vector.extend(indicator(word['own-artist-music'], 5))
-    vector.append(word['like-artist'])
+    vector.append(word['like-artist']/100.0)
     vector.extend([binary(word['w%d' % (j+1)]) for j in range(81)])
     vector.extend(indicator(track_id, 184))
-    vector.append(user_id)
+    vector.append(user_id/50928.0)
     # The principled way is to use vector.extend(indicator(user_id, 50928)), 
     # but it would take too much memory.
     return vector
@@ -80,7 +80,7 @@ from sklearn.cross_validation import cross_val_score
 def validate(examples):
     X = [represent(example) for example in examples]
     y = [label(example) for example in examples]
-    scores = cross_val_score(clf, X, y, cv=3, score_func=rmse)
+    scores = cross_val_score(clf, X, y, cv=2, score_func=rmse)
     return scores
 
 if __name__ == "__main__":
