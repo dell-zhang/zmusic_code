@@ -59,15 +59,15 @@ PROGRAMS
 
 * ./users.py
 
-  Preprocess the users data
+  Pre-process the users data
 
 * ./words.py
 
-  Preprocess the words data
+  Pre-process the words data
 
 * ./music.py
 
-  Preprocess the music training/test data
+  Pre-process the music training/test data
 
 * ./model.py [n]
 
