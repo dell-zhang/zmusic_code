@@ -67,7 +67,7 @@ PROGRAMS
 
 * ./music.py
 
-  Proprocess the music training/test data
+  Preprocess the music training/test data
 
 * ./model.py [n]
 
