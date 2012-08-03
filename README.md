@@ -46,8 +46,8 @@ DATA
 
   The data files users.csv and words.csv
   have been cleaned and encoded manually
-  using Unix tools (cat, cut, split, grep, sort, wc,...)
-  and a text editor (search, replace,...).
+  using Unix tools (cat, cut, split, grep, sort, wc, ...)
+  and a text editor (search, replace, ...).
 
 * ./data/*.txt
 
