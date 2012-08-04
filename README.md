@@ -10,11 +10,11 @@ DOCUMENTS
 
 * How I Did It
 
-  http://www.dcs.bbk.ac.uk/~dell/publications/musichackthon/zmusic_doc.pdf
+  http://www.dcs.bbk.ac.uk/~dell/publications/musichackathon/zmusic_doc.pdf
 
 * Interview
 
-  http://www.dcs.bbk.ac.uk/~dell/publications/musichackthon/zmusic_int.txt
+  http://www.dcs.bbk.ac.uk/~dell/publications/musichackathon/zmusic_int.txt
 
 --------------------------------
 REQUIREMENTS
